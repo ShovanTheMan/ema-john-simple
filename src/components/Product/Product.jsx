@@ -11,6 +11,7 @@ const Product = (props) => {
 
     return (
         <div className='product'>
+            
             <img src={img} alt="" />
             <div className='product-info'>
                 <h6 className='product-name'>{name}</h6>
@@ -19,6 +20,7 @@ const Product = (props) => {
                 <p>Ratings: {ratings} Stars</p>
             </div>
             <button onClick={()=>handelAddToCart(props.product)} className='btn-cart'>
+                {/* (props) anle ()=> sign  */}
                 Add-to-cart
                 <FontAwesomeIcon icon={faShoppingCart} />
                 </button>
